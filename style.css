@@ -164,12 +164,19 @@ body{
     color: #787878;
     cursor: pointer;
 }
+#home-sec i:hover{
+    color: #A9A9A9;
+}
 #home-sec button{
     width: 190px;
     margin: 0 auto;
     background-color: #787878;
     border-color: gray;
     color: #ffffff;
+}
+#home-sec button:hover{
+    background-color: #A9A9A9;
+    border-color: #A9A9A9;
 }
 
 /* ====Skills Section==== */
