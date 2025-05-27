@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Nav Bar-->
+    <nav class="nav-bar">
+        <div class="nav-wrapper">
+            <div>
+                <span>Arkar Min</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bars openBtn"></i>
+            </div>
+            <div class="navItems-wrapper">
+                <a href="#home-sec">HOME</a>
+                <a href="#service-sec" class="scrollLink">WHAT I DO</a>
+                <a href="#skill-sec" class="scrollLink">EDU</a>
+                <a href="#aboutme-sec" class="scrollLink">ABOUT ME</a>
+                <a href="#project-sec" class="scrollLink">PROJECTS</a>
+                <a href="#contact-sec" class="scrollLink">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    <div class="placeholder"></div>
+
+    <div class="sideBar">
+        <div class="bar-wrapper">
+            <i class="fa-solid fa-bars closeBtn"></i>
+        </div>
+        <div class="side-wrapper">
+            <a href="#home-sec">HOME</a>
+            <a href="#service-sec" class="scrollLink">WHAT I DO</a>
+            <a href="#skill-sec" class="scrollLink">EDU</a>
+            <a href="#aboutme-sec" class="scrollLink">ABOUT ME</a>
+            <a href="#project-sec" class="scrollLink">PROJECTS</a>
+            <a href="#contact-sec" class="scrollLink">CONTACT</a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!--Home Section-->
+    <section id="home-sec">
+        <div class="img">
+            <img src="img/panda.jpg" alt="" width="180" height="180">
+        </div>
+        <h1><span>Hi,It's </span>ARON</h1>
+        <h2>"Leveling up through every real-world XP"</h2>
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+        </div>
+        <button type="button" class="btn btn-primary">Download CV</button>
+    </section>
+
+    <!--Services Section-->
+    <section id="service-sec">
+        <h2  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">What I can offer to Thymes!</h2>
+        <hr>
+        <div class="service" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <span>Frontend Development</span>
+                <p>Experienced as Freelance front end developer 4 years ago. I can build responsive, user-friendly websites, maintain Thymes's website or even upgrade it and keep the infos updated on it. Just a little bit of time and I can get right back to the track and be a fine dev for Thymes.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-laptop"></i>
+                <span>Technical Skills</span>
+                <p>I’m confident in handling all the essential technical skills needed for this internship. I have a solid foundation from studying Computer Science and ICT courses during my IGCSE. I’m comfortable with coding, debugging, and quickly adapting to new tools and technologies.</p>
+            </div>
+            <div class="service-box service-box3">
+                <i class="fa-solid fa-camera-retro"></i>
+                <span>Photo/videography</span>
+                <p>Photography is a passion of mine. I love capturing memorable and beautiful moments, and I’m excited about the possibility of assisting your team in events or visual projects.</p>
+            </div>
+        </div>
+        <div class="service" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+            <div class="service-box">
+                <i class="fa-solid fa-images"></i>
+                <span>Content Creating</span>
+                <p>Along with photography, I create engaging written and visual content for social media platforms like TikTok and Instagram, as well as blog posts. I’m eager to bring fresh and creative ideas to your team’s content.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-user-graduate"></i>
+                <span>Education Consulting</span>
+                <p>As I'm also a student, I’ve spent years learning about universities and educational pathways, and It'd be a great experience helping others navigate their own journeys. I’d be excited to share this knowledge and support students or peers looking for guidance</p>
+            </div>
+            <div class="service-box service-box3 last-box">
+                <i class="fa-solid fa-user-group"></i>
+                <span>Learning Spirit</span>
+                <p>I’m eager and willing to learn anything new and gain valuable experience with Thymes. I look forward to building good connections with seniors and contributing as much as I can to support the team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Skills Section-->
+    <section id="skill-sec" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <h2>Education</h2>
+        <div class="skill">
+            <div>
+                <div class="skill_con">
+                    <span class="skill_name">IGCSE O level</span>
+                    <span>Course completed</span>
+                </div>
+                <div class="html_bar bar"></div>
+            </div>
+            <div>
+                <div class="skill_con">
+                    <span class="skill_name">GED</span>
+                    <span>Almost complete</span>
+                </div>
+                <div class="css_bar bar"></div>
+            </div>
+            <div>
+                <div class="skill_con">
+                    <span class="skill_name">SAT</span>
+                    <span>Currently studying</span>
+                </div>
+                <div class="js_bar bar"></div>
+            </div>
+            <div>
+                <div class="skill_con">
+                    <span class="skill_name">IELTS</span>
+                    <span>Currently studying</span>
+                </div>
+                <div class="bs_bar bar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="aboutme-sec" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+        <h2>About Me</h2>
+        <hr>
+        <div class="p-wrapper">
+            <p>Hello, I'm Arkar Min AKA Aron. I'm 18 and I'll be GED graduated in a few months.</p>
+            <p>I’m a curious and dedicated learner who’s passionate about growing both technically and creatively. I believe every experience is an opportunity to improve and contribute. I’m excited to work with a team where I can build strong connections, share ideas, and help bring projects to life.</p>
+            <p>And that's where Thymes came in. Consisting of mostly youths, I'm inspired by how Thymes provides an opportunity for us who may not have many of experiences but have potentials. And I decided that I really want to be part of it as an intern.</p>
+            <p>I value clear communication, teamwork, and a positive attitude. I’m ready to take on challenges, learn from others, and support the goals of Thymes while developing my own skills.</p>
+        </div>
+    </section>
+
+    <!--Projects Section-->
+    <section id="project-sec" data-aos="slide-up" data-aos-delay="200" data-aos-duration="1000">
+        <h2>My Projects</h2>
+        <div class="brand">
+            <div class="iphoneClick active">Full Web<span>/</span></div>
+            <div class="vivoClick">Mini-Projects<span>/</span></div>
+            <div class="oppoClick">Web Components<span>/</span></div>
+            <div class="miClick">Photography</div>
+        </div>
+    
+        <div class="iphone">
+            <div class="card" style="width: 18rem;">
+                <img src="img/image.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Company Website</h5>
+                  <p class="card-text">Forever co. ltd မှအပ်ဖူးသည့် website</p>
+                  <a href="#" class="btn btn-primary">View Web</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/image2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Travel Blog Website</h5>
+                <p class="card-text">ConceptX Int School မှ class projectတစ်ခု</p>
+                <a href="#" class="btn btn-primary">View Web</a>
+              </div>
+            </div>
+            <div class="card lastCard" style="width: 18rem;">
+              <img src="img/image3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Portfolio Website</h5>
+                <p class="card-text">ယခု website ၏ before re-design </p>
+                <a href="#" class="btn btn-primary">View Web</a>
+              </div>
+            </div>
+        </div>
+    
+        <div class="vivo none">
+            <div class="card" style="width: 18rem;">
+                <img src="img/image4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Educational Web</h5>
+                  <p class="card-text">I had the idea of creating an educational website where everyone could learn Codes for free to the point where they can get jobs.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/image5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Stop Watch</h5>
+                  <p class="card-text">It's an accurate stop watch made with simple JavaScript.</p>
+                </div>
+            </div>
+            <div class="card lastCard" style="width: 18rem;">
+                <img src="img/image6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">JavaScript Music Player</h5>
+                  <p class="card-text">Small music player made with simple JavaScripts</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="oppo none">
+            <div class="card" style="width: 18rem;">
+                <img src="img/image7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Login Page</h5>
+                  <p class="card-text">Component of a social media website for real-world projects.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/image9.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sign In Page</h5>
+                  <p class="card-text">Component of a social media website for real-world projects.</p>
+                </div>
+            </div>
+            <div class="card lastCard" style="width: 18rem;">
+              <img src="img/image8.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Socialmedia Website Feed</h5>
+                <p class="card-text">I tried to create a new different main feed referencing Facebook,Instagram,Youtube.</p>
+              </div>
+            </div>
+        </div>
+    
+        <div class="mi none">
+            <div class="card" style="width: 18rem;">
+                <img src="img/image10.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Capturing Monments</h5>
+                  <p class="card-text">Capturing moments as a volunteer photographer at Siganature welcoming MUIC's visit with Thymes.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/image11.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Capturing Monments</h5>
+                <p class="card-text">Capturing moments as a volunteer photographer at Siganature welcoming MUIC's visit with Thymes.</p>
+              </div>
+            </div>
+            <div class="card lastCard" style="width: 18rem;">
+              <img src="img/image12.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Capturing Monments</h5>
+                <p class="card-text">At the MUIC's openhouse at Jasmine Palace Hotel.</p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact-sec">
+        <h2>Contact Me</h2>
+        <div class="contact_con">
+            <div class="contact1">
+                <h3 style="margin-bottom: 0;">What’s your story?</h3>
+                <h3 style="margin-top: 0;">Get in touch</h3>
+                <p>Always available for freelancing if the right project comes along, Feel free to contact me.</p>
+                <div>
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Near Bahan, Yangon</span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>apkap.love@gmail.com</span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>09943325033</span>
+                </div>
+            </div>
+            <div class="contact2">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="button" class="btn btn-primary">Send Message</button>
+            </div>
+        </div>
+    </section>
+    
+    <!--Footer Section-->
+    <section class="footer-section">
+        <p>Copyright © by Arkar Min</p>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

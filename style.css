@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+[data-aos] {
+    transition-timing-function: ease-in-out !important;
+  }
+  
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* ====Nav Bar==== */
+/*nav bar*/
+.nav-bar{
+    width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding: 15px 0;
+    z-index: 1;
+}
+.nav-bar span{
+    width: 65px;
+    height: 65px;
+    font-weight: 700;
+    font-size: 21px;
+    font-style: italic;
+    color: #787878;
+}
+.nav-bar i{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    color: #787878 !important;
+}
+.nav-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navItems-wrapper{
+    display: flex;
+}
+.navItems-wrapper a{
+    margin-left: 20px;
+    font-weight: 500;
+    color: #787878;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.placeholder{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+}
+
+/*SideBar*/
+.sideBar{
+    width: 0px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: all 0.45s ease;
+}
+.sideBar.open{
+    width: 250px !important;
+}
+.bar-wrapper{
+    min-height: 59px;
+    text-align: end;
+    padding: 0 12px;
+    border-bottom: 1px solid #efefef;
+}
+.bar-wrapper i{
+    line-height: 59px;
+    font-size: 25px;
+    cursor: pointer;
+    padding-right: 25px;
+}
+.side-wrapper{
+    padding: 0 12px;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.sideBar a{
+    color: #787878;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    margin: 8px 0;
+    transition: all 0.4s ease;
+    border-bottom: 1px solid #efefef;
+}
+.sideBar a:hover{
+    background: #A9A9A9;
+    color: #666;
+}
+/*overlay*/
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.45;
+    z-index: 1;
+    display: none;
+    transition: all 0.5s ease;
+}
+/* ====Home Section==== */
+#home-sec{
+    width: 100%;
+    padding: 150px 0;
+    background-color: #E8E9EB;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#home-sec .img{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 12px !important;
+    overflow: hidden;
+}
+#home-sec h1{
+    font-size: 46px;
+    word-spacing: 1px;
+    color: #787878;
+    font-style: italic;
+}
+#home-sec h1 span{
+    font-size: 32px;
+    color: #A9A9A9 !important;
+    font-style: normal !important;
+}
+#home-sec h2{
+    font-size: 16px;
+    font-style: italic;
+    color: #787878 !important;
+}
+#home-sec .social{
+    display: flex;
+    margin: 20px auto;
+    margin-bottom: 30px !important;
+}
+#home-sec i{
+    font-size: 31px;
+    margin: 0 12px;
+    color: #787878;
+    cursor: pointer;
+}
+#home-sec button{
+    width: 190px;
+    margin: 0 auto;
+    background-color: #787878;
+    border-color: gray;
+    color: #ffffff;
+}
+
+/* ====Skills Section==== */
+#skill-sec{
+    text-align: center;
+    height: 555px;
+    background-color: #E8E9EB;
+    padding: 20px 0;
+}
+.skill{
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+#skill-sec h2{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #787878;
+}
+.skill_con{
+    display: flex;
+    justify-content: space-between;
+    color: #787878;
+}
+.skill_name{
+    font-size: 17px;
+    font-weight: 500;
+}
+.bar{
+    height: 8px;
+    background-color: #D3D3D3;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+/*.html_bar{
+    width: 100%;
+}
+.css_bar{
+    width: 70%;
+}
+.js_bar{
+    width: 65%;
+}
+.bs_bar{
+    width: 80%;
+}
+.php_bar{
+    width: 40%;
+}
+.mysql_bar{
+    width: 20%;
+}*/
+@media(max-width:650px){
+    .skill{
+        width: 100% !important;
+        background-color: #F8F9FA !important;
+        box-shadow: none;
+        border-radius: none;
+    }
+}
+
+/* ====Services Section==== */
+#service-sec{
+    text-align: center;
+    padding: 25px 0;
+}
+#service-sec h2{
+    font-size: 34px;
+    margin: 20px 0;
+    margin-top: 30px;
+    color: #787878;
+}
+#service-sec hr{
+    width: 210px;
+    margin: 0 auto;
+    color: #787878;
+    height: 2px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+}
+.service{
+    padding: 27px;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+}
+.service-box{
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 430;
+    color: #787878;
+    margin-right: 60px;
+    width: 30%;
+}
+.service-box3{
+    margin-right: 0px !important;
+}
+.service-box i{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #787878;
+}
+.service-box span{
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.service-box p{
+    padding-bottom: 15px;
+    line-height: 1.8em;
+    word-wrap: break-word;
+    font-size: 15px;
+}
+@media(max-width:960px){
+    .service{
+        display: block;
+    }
+    .service-box{
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+    .last-box{
+        margin-bottom: 0 !important;
+    }
+}
+
+/* ====About Section==== */
+#aboutme-sec{
+    text-align: center;
+    padding: 60px 25px;  
+    background-color: #F8F9FA;  
+    color: #787878;
+}
+#aboutme-sec hr{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15px !important;
+    margin-bottom: 25px !important;
+}
+.p-wrapper{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 14.5px;
+    line-height: 1.8em;
+    word-wrap: break-word;
+    color: #666;
+}
+
+/* ====Projects Section==== */
+#project-sec{
+    width: 100%;
+    background-color: #F8F9FA !important;
+    padding: 40px 0;
+    color: #787878;
+}
+#project-sec h2{
+    text-align: center;
+    font-weight: 700;
+}
+.brand{
+    height: 70px;
+    margin-top: 15px;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.brand div{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+}
+.brand span{
+    margin: 0 3rem;
+    color: #6c757d!important;
+}
+.active{
+    color: #70aed2;
+}
+.none{
+    display: none !important;
+}
+.iphone,.vivo,.oppo,.mi{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.card{
+    margin-right: 20px;
+}
+.card img{
+    width: auto;
+    height: 190px;
+}
+.lastCard{
+    margin-right: 0 !important;
+}
+.card-text{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card-title{
+    font-weight: 650;
+}
+@media(max-width:950px){
+    .iphone,.vivo,.oppo,.mi{
+        flex-direction: column;
+    }
+    .card{
+        margin: 0 auto !important;
+        margin-bottom: 10px !important;
+    }
+}
+@media(max-width:650px){
+    .brand span{
+        margin: 0 1.2rem !important;
+    }
+    .brand div{
+        font-size: 14.7px;
+    }
+}
+
+/* ====Contact Section==== */
+#contact-sec{
+    background-color: #E8E9EB;
+    padding: 35px 0;
+    padding-bottom: 40px;
+    color: #787878;
+}
+#contact-sec h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+.contact_con{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+.contact1{
+    background-color: #fff;
+    padding: 30px;
+    height: fit-content;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-right: 50px;
+}
+.contact1 h3{
+    font-weight: 700;
+    font-size: 24px;
+}
+.contact1 p{
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-bottom: 20px;
+}
+.contact1 div{
+    margin-bottom: 18px;
+}
+.contact1 i{
+    font-size: 20px;
+    margin-right: 15px;
+}
+.contact2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 17px;
+    background-color: #fff;
+    width: 380px;
+    border-radius: 8px;
+}
+.contact2 input[type='text']{
+    background-color: #f2f2f2;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 7px 10px;
+    margin-bottom: 15px;
+}
+textarea{
+    background-color: #f2f2f2;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 7px 10px;
+    min-height: 150px;
+    max-height: 150px;
+}
+.contact2 button{
+    margin-top: 15px;
+    width: 160px;
+}
+@media(max-width:1050px){
+    .contact_con{
+        display: block;
+    }
+    .contact1{
+        margin-right: 0 !important;
+    }
+    .contact2{
+        margin-top: 20px;
+        width: 400px;
+    }
+}
+@media(max-width:600px){
+    .contact2{
+        background-color: #F8F9FA;
+        border-radius: none;
+    }
+    .contact2 input[type='text'],textarea{
+        background-color: #fff;
+    }
+}
+
+/* ====Footer==== */
+.footer-section{
+    background-color: #F8F9FA;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-section p{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.9em;
+    font-size: 16px;
+    color: #787878;
+    line-height: 1.7em;
+}
+/*responsive*/
+@media(max-width:780px){
+    .navItems-wrapper{
+        display: none;
+    }
+    .nav-bar i{
+        display: block;
+    }
+    .nav-wrapper{
+        width: 85% !important;
+    }
+    .card{
+        width: 50%;
+    }
+    .overlay2 h2{
+        font-size: 50px;
+    }
+    .overlay2 p{
+        font-size: 25px;
+        letter-spacing: normal;
+        text-transform: none;
+    }
+    #home-section p{
+        margin-top: 7px;
+    }
+}
+@media(max-width:480px){
+    .card{
+        width: 100%;
+    }
+    .overlay2 h2{
+        font-size: 35px;
+    }
+    .overlay2 p{
+        font-size: 13px;
+    }
+    #home-section h1 {
+        font-size: 45px;
+    }
+    #home-section h2{
+        font-size: 20px;
+    }
+}
